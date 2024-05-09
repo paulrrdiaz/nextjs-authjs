@@ -1,0 +1,15 @@
+version: '3.8'
+
+name: ketregalo
+
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - DATABASE_URL=127.0.0.1
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=l1ttl3s3cr3t
