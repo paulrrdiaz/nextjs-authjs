@@ -1,6 +1,5 @@
 import React, { PropsWithChildren } from 'react'
 import { Box, Flex } from '@chakra-ui/react'
-import { Velustro } from 'uvcanvas'
 
 const AuthLayout = ({ children }: PropsWithChildren) => {
   return (
@@ -9,20 +8,8 @@ const AuthLayout = ({ children }: PropsWithChildren) => {
       minH="100vh"
       justifyContent="center"
       alignItems="center"
+      bgColor="green.50"
     >
-      <Box
-        position="absolute"
-        inset={0}
-        overflow="hidden"
-        sx={{
-          '& canvas': {
-            height: '100vh',
-          },
-        }}
-      >
-        <Velustro />
-      </Box>
-
       <Box
         position="relative"
         gap={4}

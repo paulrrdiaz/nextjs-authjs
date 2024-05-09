@@ -28,17 +28,17 @@ const UserAvatar = () => {
 
   return (
     <Menu>
-      <MenuButton backgroundColor="blue.100" p={2} rounded="full">
+      <MenuButton backgroundColor="green.100" p={2} rounded="full">
         <Flex alignItems="center" gap={1}>
           <Avatar
             color="white"
             fontWeight="bold"
-            backgroundColor="blue.500"
+            backgroundColor="green.500"
             size="xs"
             {...(currentUser?.name && { name: currentUser.name })}
             {...(currentUser?.image && { src: currentUser.image })}
           />
-          <Icon as={ChevronDownIcon} color="blue.500" />
+          <Icon as={ChevronDownIcon} color="green.500" />
         </Flex>
       </MenuButton>
       <MenuList>
@@ -47,7 +47,7 @@ const UserAvatar = () => {
           alignItems="flex-start"
           flexDirection="column"
           gap={0.5}
-          backgroundColor="blue.50"
+          backgroundColor="green.50"
           py={3}
         >
           <Heading size="sm" as="h4" lineHeight={1}>

@@ -1,5 +1,5 @@
-import { LogAction } from '@prisma/client'
-import * as z from 'zod'
+import * as z from "zod"
+import { LogAction } from "@prisma/client"
 
 export const LogModel = z.object({
   id: z.string(),

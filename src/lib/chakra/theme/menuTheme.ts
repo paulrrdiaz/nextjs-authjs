@@ -11,7 +11,7 @@ const baseStyle = definePartsStyle({
   list: {
     py: '0',
     borderRadius: 'xl',
-    borderColor: 'blue.300',
+    borderColor: 'green.300',
   },
   item: {
     color: 'gray.700',
@@ -43,7 +43,7 @@ const baseStyle = definePartsStyle({
   },
   divider: {
     my: 0,
-    borderColor: 'blue.300',
+    borderColor: 'green.300',
   },
 })
 // export the base styles in the component theme

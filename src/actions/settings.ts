@@ -4,7 +4,7 @@ import bcryptjs from 'bcryptjs'
 
 import { sendVerificationEmail } from '@/lib/mailing'
 import { TSettingsFormSchema } from '@/lib/schemas'
-import { currentUser } from '@/lib/server'
+import { getCurrentUser } from '@/lib/server'
 import { getUserByIdOrEmail, updateUserById } from '@/models/user'
 import { generateVerificationToken } from '@/models/verification-token'
 
@@ -12,7 +12,7 @@ export const handleUpdateSettings = async (
   data: Partial<TSettingsFormSchema>,
 ) => {
   try {
-    const user = await currentUser()
+    const user = await getCurrentUser()
 
     if (!user) {
       throw new Error('No user found')

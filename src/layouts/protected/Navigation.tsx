@@ -41,7 +41,7 @@ const Navigation = () => {
       p={4}
       pr={0}
       as="aside"
-      backgroundColor="blue.500"
+      backgroundColor="green.500"
       w={60}
       flexDirection="column"
       gap={6}
@@ -53,7 +53,7 @@ const Navigation = () => {
         color="white"
         as="h1"
       >
-        KETREGALO
+        nextjs-authjs
       </Heading>
 
       <List as="nav" color="white" display="flex" flexDirection="column">
@@ -67,9 +67,9 @@ const Navigation = () => {
               {...(isSelected && { pointerEvents: 'none', fontWeight: 'bold' })}
               _hover={{
                 textDecoration: 'none',
-                backgroundColor: 'blue.600',
+                backgroundColor: 'green.600',
               }}
-              color={isSelected ? 'blue.500' : 'white'}
+              color={isSelected ? 'green.500' : 'white'}
               backgroundColor={isSelected ? 'white' : 'transparent'}
               display="flex"
               gap={2}
